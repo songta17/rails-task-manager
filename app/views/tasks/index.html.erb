@@ -1,0 +1,15 @@
+<div id="container">
+  <h1>My tasks</h1>
+  <div class="tasks-list">
+    <% @tasks %>
+    <% @tasks.each do |task| %>
+    <div class="item">
+      <input type="checkbox" name=<%= task.id %>>
+      <label for=<%= task.id %>><%= link_to task.title, task_path(task) %> <%= link_to "- Del", task_path(task), method: :delete, data: { confirm: "" } %></label>
+      <% end %>
+    </div>
+  </div>
+  <div class="add-new">
+    <%= link_to "+ Add a new task", tasks_new_path(@tasks_new) %>
+  </div>
+</div>

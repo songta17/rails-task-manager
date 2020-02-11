@@ -1,0 +1,13 @@
+<div id="container">
+  <h1><%= @task.title %></h1>
+  <div class="edit-btn">
+    <%= link_to "Edit this task", "http://localhost:3000/tasks/#{@task.id}" %>
+  </div>
+  <div class="task-content">
+    <%= @task.details %>
+  </div>
+  <input type="checkbox" class="task-checkbox"> This task is not completed yet
+  <div class="back-to-list">
+    <%= link_to "Back to list", tasks_path(@tasks) %>
+  </div>
+</div>

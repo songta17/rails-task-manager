@@ -1,3 +1,55 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: rgb(51, 122, 183);
+}
+#container {
+  display: block;
+  width: 500px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.tasks-list {
+  display: block;
+}
+
+.item {
+  display: block;
+}
+
+.task-content {
+  padding: 40px;
+  border: 1px solid rgb(196, 196, 196);
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 30px;
+}
+
+.task-checkbox {
+  margin-bottom: 30px;
+}
+
+.back-to-list {
+  border-top: 1px solid rgb(196, 196, 196);
+  padding: 10px 0;
+}
+
+.add-new {
+  margin: 20px 0px;
+}
+
+.edit-btn {
+  position: absolute;
+  padding: 10px;
+  background-color: rgb(237, 234, 234);
+  border-radius: 8px;
+  border: 1px solid gray;
+  top: 60px;
+  left: 450px;
+}
+
+a {
+  text-decoration: none;
+}
